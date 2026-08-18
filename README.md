@@ -210,3 +210,35 @@ Several of the largest prediction errors occurred among high-value properties, p
 This suggests that the model may have difficulty capturing some of the variation in premium-market property prices.
 
 Large prediction errors were investigated rather than automatically removed, since a large error does not necessarily indicate that an observation is invalid.
+
+
+## 🔎 Feature Importance
+
+Feature importance was extracted from the tuned Random Forest model to understand which variables contributed most to its predictions.
+
+### Top Predictive Features
+
+| Rank | Feature | Importance |
+|---:|---|---:|
+| 1 | **OverallQual** | **40.78%** |
+| 2 | **GrLivArea** | **17.76%** |
+| 3 | **YearBuilt** | **4.89%** |
+| 4 | **GarageCars** | **4.24%** |
+| 5 | **TotalBsmtSF** | **3.90%** |
+| 6 | **GarageArea** | **3.05%** |
+| 7 | **1stFlrSF** | **2.62%** |
+| 8 | **BsmtFinSF1** | **1.81%** |
+| 9 | **LotArea** | **1.71%** |
+| 10 | **ExterQual_TA** | **1.16%** |
+
+### Key Insight
+
+`OverallQual` was the most influential feature, contributing approximately **40.8%** of the Random Forest's total impurity-based feature importance.
+
+`GrLivArea` was the second most influential feature at approximately **17.8%**.
+
+Together, these two features accounted for approximately **58.5%** of the model's total feature importance.
+
+Other important predictors included construction year, garage capacity, basement area, garage size, first-floor area, and finished basement area.
+
+> **Note:** Feature importance represents predictive importance within the Random Forest model and should not be interpreted as causal impact.
