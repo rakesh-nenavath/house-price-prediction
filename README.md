@@ -242,3 +242,53 @@ Together, these two features accounted for approximately **58.5%** of the model'
 Other important predictors included construction year, garage capacity, basement area, garage size, first-floor area, and finished basement area.
 
 > **Note:** Feature importance represents predictive importance within the Random Forest model and should not be interpreted as causal impact.
+
+
+## 🛠️ Technologies Used
+
+- **Python**
+- **Pandas**
+- **NumPy**
+- **Matplotlib**
+- **Seaborn**
+- **Scikit-learn**
+- **Jupyter Notebook**
+- **Git / GitHub**
+
+## 💡 Key Takeaways
+
+- `OverallQual` was the strongest predictor of house sale price in the Random Forest model.
+- `GrLivArea` was the second most influential feature.
+- Higher-quality properties generally had substantially higher sale prices.
+- Log transformation helped address the strong right skew in the target variable.
+- A proper preprocessing pipeline helped handle mixed numerical and categorical features consistently.
+- Cross-validation provided a more reliable view of model stability than relying only on a single train/test split.
+- Error analysis showed that some premium properties were substantially harder to predict accurately.
+
+## ⚠️ Limitations
+
+- The dataset contains only **1,460 training observations**.
+- Model performance depends partly on the selected train/test split.
+- Some high-value properties produced relatively large prediction errors.
+- Feature importance indicates predictive contribution, not causation.
+- The dataset represents historical housing transactions and may not directly reflect current market prices.
+- Additional feature engineering and alternative algorithms could potentially improve performance.
+
+## 🚀 Future Improvements
+
+Potential improvements include:
+
+- Advanced feature engineering
+- More systematic outlier treatment
+- Gradient boosting models such as XGBoost or LightGBM
+- Ensemble model stacking
+- More extensive hyperparameter optimization
+- External validation on newer housing data
+
+## 👤 Author
+
+**Rakesh Nayak**
+
+Aspiring Data Scientist focused on Python, SQL, Machine Learning, Statistics, and Data Analysis.
+
+[LinkedIn](https://www.linkedin.com/in/rakesh-nenavath/) | [GitHub](https://github.com/rakesh-nenavath/)
