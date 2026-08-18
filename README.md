@@ -98,3 +98,40 @@ A Scikit-learn `ColumnTransformer` was used to apply different preprocessing ste
 - Unknown categories handled safely during transformation
 
 The preprocessing steps were incorporated into the machine learning pipeline to ensure that the same transformations were applied consistently during training and prediction.
+
+
+## 🤖 Model Development
+
+Four regression models were trained and evaluated:
+
+- Linear Regression
+- Ridge Regression
+- Decision Tree Regressor
+- Random Forest Regressor
+
+Model performance was evaluated using:
+
+- Mean Absolute Error (MAE)
+- Root Mean Squared Error (RMSE)
+- R² Score
+
+The target variable was modeled on the log-transformed scale, and predictions were converted back to the original price scale for business-level error interpretation.
+
+### Model Comparison
+
+| Model | R² (Log) | MAE ($) | RMSE ($) |
+|---|---:|---:|---:|
+| **Linear Regression** | **0.9088** | **15,056** | **23,104** |
+| Ridge | 0.9034 | 16,035 | 24,246 |
+| Random Forest | 0.8867 | 17,435 | 29,569 |
+| Decision Tree | 0.8128 | 24,453 | 41,496 |
+
+### Best Performing Model
+
+Based on the held-out test-set results, **Linear Regression** achieved the strongest overall performance among the models evaluated.
+
+It achieved:
+
+- **R²: 0.9088**
+- **MAE: approximately $15,056**
+- **RMSE: approximately $23,104**
