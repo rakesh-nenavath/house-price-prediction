@@ -172,3 +172,41 @@ The tuned Random Forest achieved:
 - Standard deviation: **0.0201**
 
 The tuned Random Forest showed a lower average cross-validation RMSE and lower variation between folds compared with Linear Regression, although Linear Regression achieved better performance on the final held-out test set.
+
+
+## 📉 Residual & Error Analysis
+
+Residual analysis was performed to understand where the model made larger prediction errors.
+
+The residual was calculated as:
+
+**Residual = Actual Price − Predicted Price**
+
+### Residual Statistics
+
+- Mean residual: approximately **$3,526**
+- Median residual: approximately **-$296**
+- Minimum residual: approximately **-$107,266**
+- Maximum residual: approximately **$238,798**
+
+The median residual being close to zero indicates that the predictions were reasonably centered overall, although some individual observations had substantially larger errors.
+
+### Largest Prediction Errors
+
+The largest errors included several high-value properties:
+
+| Property | Actual Price | Predicted Price | Absolute Error |
+|---|---:|---:|---:|
+| NoRidge property | $755,000 | $516,202 | $238,798 |
+| NridgHt property | $611,657 | $449,932 | $161,724 |
+| StoneBr property | $556,581 | $425,059 | $131,522 |
+| NridgHt property | $253,293 | $360,559 | $107,266 |
+| Somerst property | $311,500 | $207,801 | $103,699 |
+
+### Error Analysis Finding
+
+Several of the largest prediction errors occurred among high-value properties, particularly properties in premium neighborhoods such as `NoRidge`, `NridgHt`, and `StoneBr`.
+
+This suggests that the model may have difficulty capturing some of the variation in premium-market property prices.
+
+Large prediction errors were investigated rather than automatically removed, since a large error does not necessarily indicate that an observation is invalid.
