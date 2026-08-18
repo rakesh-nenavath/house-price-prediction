@@ -135,3 +135,40 @@ It achieved:
 - **R²: 0.9088**
 - **MAE: approximately $15,056**
 - **RMSE: approximately $23,104**
+
+
+## 🎯 Hyperparameter Tuning
+
+Random Forest hyperparameters were optimized using `GridSearchCV` with 5-fold cross-validation.
+
+### Best Parameters
+
+- `n_estimators`: 200
+- `max_features`: 0.7
+- `min_samples_leaf`: 2
+- `min_samples_split`: 2
+- `max_depth`: None
+
+The tuned Random Forest achieved:
+
+- **Log MAE:** 0.0963
+- **Log RMSE:** 0.1460
+- **Log R²:** 0.8858
+- **MAE:** approximately $17,022
+- **RMSE:** approximately $29,387
+
+## 🔄 Cross-Validation
+
+5-fold cross-validation was used to assess model stability.
+
+### Linear Regression
+
+- Mean RMSE: **0.1709**
+- Standard deviation: **0.0271**
+
+### Tuned Random Forest
+
+- Mean RMSE: **0.1417**
+- Standard deviation: **0.0201**
+
+The tuned Random Forest showed a lower average cross-validation RMSE and lower variation between folds compared with Linear Regression, although Linear Regression achieved better performance on the final held-out test set.
