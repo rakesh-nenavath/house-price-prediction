@@ -292,3 +292,54 @@ Potential improvements include:
 Aspiring Data Scientist focused on Python, SQL, Machine Learning, Statistics, and Data Analysis.
 
 [LinkedIn](https://www.linkedin.com/in/rakesh-nenavath/) | [GitHub](https://github.com/rakesh-nenavath/)
+
+
+## 📊 Project Visualizations
+
+### Sale Price Distribution
+
+![Sale Price Distribution](saleprice_distribution.png)
+
+### Overall Quality vs Sale Price
+
+![Overall Quality vs Sale Price](overallqual_vs_saleprice.png)
+
+### Living Area vs Sale Price
+
+![Living Area vs Sale Price](grlivarea_vs_saleprice.png)
+
+### Actual vs Predicted Sale Price
+
+![Actual vs Predicted Sale Price]()
+
+### Residual Analysis
+
+![Residual Analysis](residual_analysis.png)
+
+### Feature Importance
+
+![Feature Importance](## 📊 Project Visualizations
+
+### Sale Price Distribution
+
+![Sale Price Distribution](saleprice_distribution.png)
+
+### Overall Quality vs Sale Price
+
+![Overall Quality vs Sale Price](overallqual_vs_saleprice.png)
+
+### Living Area vs Sale Price
+
+![Living Area vs Sale Price](grlivarea_vs_saleprice.png)
+
+### Actual vs Predicted Sale Price
+
+![Actual vs Predicted Sale Price](actual_vs_predicted.png)
+
+### Residual Analysis
+
+![Residual Analysis](residual_analysis.png)
+
+### Feature Importance
+
+![Feature Importance](feature_importance.png))
