@@ -298,48 +298,24 @@ Aspiring Data Scientist focused on Python, SQL, Machine Learning, Statistics, an
 
 ### Sale Price Distribution
 
-![Sale Price Distribution](saleprice_distribution.png)
+![Sale Price Distribution](./images/saleprice_distribution.png)
 
 ### Overall Quality vs Sale Price
 
-![Overall Quality vs Sale Price](overallqual_vs_saleprice.png)
+![Overall Quality vs Sale Price](./images/overallqual_vs_saleprice.png)
 
 ### Living Area vs Sale Price
 
-![Living Area vs Sale Price](grlivarea_vs_saleprice.png)
+![Living Area vs Sale Price](./images/grlivarea_vs_saleprice.png)
 
 ### Actual vs Predicted Sale Price
 
-![Actual vs Predicted Sale Price]()
+![Actual vs Predicted Sale Price](./images/actual_vs_predicted.png)
 
 ### Residual Analysis
 
-![Residual Analysis](residual_analysis.png)
+![Residual Analysis](./images/residual_analysis.png)
 
 ### Feature Importance
 
-![Feature Importance](## 📊 Project Visualizations
-
-### Sale Price Distribution
-
-![Sale Price Distribution](saleprice_distribution.png)
-
-### Overall Quality vs Sale Price
-
-![Overall Quality vs Sale Price](overallqual_vs_saleprice.png)
-
-### Living Area vs Sale Price
-
-![Living Area vs Sale Price](grlivarea_vs_saleprice.png)
-
-### Actual vs Predicted Sale Price
-
-![Actual vs Predicted Sale Price](actual_vs_predicted.png)
-
-### Residual Analysis
-
-![Residual Analysis](residual_analysis.png)
-
-### Feature Importance
-
-![Feature Importance](feature_importance.png))
+![Feature Importance](./images/feature_importance.png)
