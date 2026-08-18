@@ -60,3 +60,41 @@ The exploratory analysis focused on understanding the target variable, identifyi
 - `GrLivArea` had a correlation of approximately **0.71** with `SalePrice`.
 - Higher-quality homes generally had substantially higher sale prices.
 - Some unusually large living-area properties were identified during outlier analysis.
+
+
+## ⚙️ Data Preprocessing
+
+The dataset contained both numerical and categorical features, with missing values present in several columns.
+
+### Missing Value Analysis
+
+The dataset contained **7,829 missing values** across the 81 columns.
+
+The columns with the highest number of missing values included:
+
+- `PoolQC`
+- `MiscFeature`
+- `Alley`
+- `Fence`
+- `MasVnrType`
+- `FireplaceQu`
+- `LotFrontage`
+
+Some missing values represented the **absence of a feature** rather than an unknown value. For example, missing values in columns such as `PoolQC`, `Alley`, `Fence`, `FireplaceQu`, and garage/basement-related features can indicate that the property does not have that feature.
+
+### Preprocessing Pipeline
+
+A Scikit-learn `ColumnTransformer` was used to apply different preprocessing steps to numerical and categorical features.
+
+#### Numerical Features
+
+- Median imputation using `SimpleImputer`
+- Standardization using `StandardScaler`
+
+#### Categorical Features
+
+- Missing-value imputation using `SimpleImputer`
+- One-hot encoding using `OneHotEncoder`
+- Unknown categories handled safely during transformation
+
+The preprocessing steps were incorporated into the machine learning pipeline to ensure that the same transformations were applied consistently during training and prediction.
